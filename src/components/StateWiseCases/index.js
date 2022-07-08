@@ -265,7 +265,7 @@ class StateWiseCases extends Component {
       stateCode,
     } = this.state
 
-    const catdata = this.getCategoryWiseData()
+    const categoryData = this.getCategoryWiseData()
 
     return (
       <>
@@ -301,7 +301,7 @@ class StateWiseCases extends Component {
                 className="districts-container"
                 testid="topDistrictsUnorderedList"
               >
-                {catdata.map(each => (
+                {categoryData.map(each => (
                   <ShowEachDistrictData
                     key={each.distName}
                     number={each.value}

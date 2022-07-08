@@ -165,8 +165,8 @@ class Home extends Component {
     isDecreasedState: 0,
     isRecoveredState: 0,
     search: '',
-    filteredList: {},
-    statesInfo: {},
+    filteredList: [],
+    statesInfo: [],
   }
 
   componentDidMount = () => {
@@ -316,7 +316,7 @@ class Home extends Component {
     const {statesInfo} = this.state
 
     return (
-      <div className="state-wise-column">
+      <div className="state-wise-column" testid="stateWiseCovidDataTable">
         <div className="state-list">
           <div className="state-list-container">
             <button
