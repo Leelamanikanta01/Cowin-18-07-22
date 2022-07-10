@@ -1,4 +1,4 @@
-.home-container {
+.home-main-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -9,17 +9,17 @@
 }
 
 @media screen and (max-width: 600px) {
-  .home-container {
+  .home-main-container {
     margin-top: 0px;
   }
 }
-.home-content-container {
+.home-responsive-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.search-container {
+.home-content-container {
   background: #2f2f43;
   border-radius: 8px;
   margin: 30px 0px;
@@ -36,7 +36,7 @@
   margin: 0px 32px;
 }
 
-.search-bar {
+.search-input {
   background-color: transparent;
   border: none;
   outline: none;
@@ -50,14 +50,14 @@
   color: #94a3b8;
 }
 
-.search-result-container {
+.search-result-list {
   list-style-type: none;
   width: 57.22%;
 
   margin-bottom: 64px;
 }
 
-.country-stats {
+.state-country-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -66,7 +66,7 @@
   flex-wrap: wrap;
 }
 
-.stats-block-column {
+.state-list-column {
   text-align: center;
   min-width: 120px;
   margin: 0px 10px;
@@ -80,10 +80,10 @@
   line-height: 24px;
 }
 
-.stats-icon {
+.state-wide-case {
   font-size: 38px;
 }
-.stats-number {
+.state-heading {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -104,7 +104,7 @@
   color: #6c757d;
 }
 
-.all-states-table {
+.state-wise-column {
   width: 100%;
   background: #1e1e30;
   border: 1px solid #475569;
@@ -113,7 +113,7 @@
   align-self: flex-start;
 }
 
-.table-header {
+.state-list {
   border-bottom: 1px solid #475569;
   display: flex;
   flex-direction: row;
@@ -122,7 +122,7 @@
   height: 72px;
 }
 
-.state-table {
+.state-container {
   width: 80%;
   margin-top: 64px;
   display: flex;
@@ -147,7 +147,7 @@
   width: 22%;
 }
 
-.state-name-heading {
+.state-list-container {
   width: 22%;
   padding: 0px 32px;
   display: flex;
@@ -155,7 +155,7 @@
   justify-content: flex-start;
   align-items: center;
 }
-.order {
+.button {
   background-color: transparent;
   border: none;
   outline: none;
@@ -182,7 +182,7 @@
   padding-top: 170px;
 }
 
-.dataView {
+.card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,7 +219,7 @@
   align-items: center;
 }
 
-.table-header-title {
+.state-header-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -263,20 +263,20 @@
 }
 
 @media (max-width: 600px) {
-  .search-container {
+  .home-content-container {
     width: 90%;
   }
 
-  .country-stats {
+  .state-country-container {
     width: 100%;
   }
-  .stats-number {
+  .state-heading {
     font-size: 16px;
   }
-  .stats-block-column {
+  .state-list-column {
     margin: 0px 3px;
   }
-  .all-states-table {
+  .state-wise-column {
     width: 800px;
     overflow-x: auto;
   }
