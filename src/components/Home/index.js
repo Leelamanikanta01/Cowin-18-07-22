@@ -422,20 +422,20 @@ class Home extends Component {
                 onChange={this.searchState}
                 onAbort={this.removeFilteredList}
               />
-              {search.length > 0 ? showSearchList : ''}
-              {isLoading ? (
-                this.renderLoaderView
-              ) : (
-                <div className="card-container">
-                  <div className="state-country-container">
-                    {this.renderAllNationalWideData()}
-                  </div>
-                  <div className="state-container">
-                    {this.renderAllStateWideData()}
-                  </div>
-                </div>
-              )}
             </div>
+            {search.length > 0 ? showSearchList : ''}
+            {isLoading ? (
+              this.renderLoaderView
+            ) : (
+              <div className="card-container">
+                <div className="state-country-container">
+                  {this.renderAllNationalWideData()}
+                </div>
+                <div className="state-container">
+                  {this.renderAllStateWideData()}
+                </div>
+              </div>
+            )}
           </div>
         </div>
         <Footer />
