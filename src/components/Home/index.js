@@ -169,7 +169,7 @@ class Home extends Component {
     statesInfo: [],
   }
 
-  componentDidMount = () => {
+  componentDidMount() {
     this.getAllData()
   }
 
@@ -255,7 +255,7 @@ class Home extends Component {
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/act_kq7nfx.jpg"
             className="state-wide-case"
-            alt="country wide confirmed cases pic"
+            alt="country wide active cases pic"
           />
           <p className="state-heading blue">{isActiveState}</p>
         </div>
@@ -265,7 +265,7 @@ class Home extends Component {
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/uyf_ndpqov.jpg"
             className="state-wide-case"
-            alt="country wide confirmed cases pic"
+            alt="country wide recovered cases pic"
           />
           <p className="state-heading green">{isRecoveredState}</p>
         </div>
@@ -275,7 +275,7 @@ class Home extends Component {
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/dese_tgak4e.jpg"
             className="state-wide-case"
-            alt="country wide confirmed cases pic"
+            alt="country wide deceased cases pic"
           />
           <p className="state-heading grey">{isDecreasedState}</p>
         </div>
@@ -431,6 +431,7 @@ class Home extends Component {
                 <div className="state-country-container">
                   {this.renderAllNationalWideData()}
                 </div>
+
                 <div className="state-container">
                   {this.renderAllStateWideData()}
                 </div>

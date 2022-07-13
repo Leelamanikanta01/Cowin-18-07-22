@@ -14,27 +14,27 @@ class About extends Component {
     factsData: {},
   }
 
-  componentDidMount = () => {
+  componentDidMount() {
     this.getAllData()
   }
 
   renderLoadingView = () => (
     <>
       <div className="loader-container" testid="aboutRouteLoader">
-        <Loader type="ThreeDots" color="blue" height="50" width="50" />
+        <Loader type="TailSpin" color="blue" height="50" width="50" />
       </div>
     </>
   )
 
-  getAllData = () => {
+  getAllData = async () => {
     const apiUrl = 'https://apis.ccbp.in/covid19-faqs'
     const option = {
       method: 'GET',
     }
 
-    const response = fetch(apiUrl, option)
+    const response = await fetch(apiUrl, option)
     if (response.ok) {
-      const data = response.json()
+      const data = await response.json()
       console.log(data)
 
       const updatedFactoidsData = data.factoids.map(each => ({
@@ -43,7 +43,8 @@ class About extends Component {
       }))
 
       const updatedFaqsData = data.faq.map(each => ({
-        key: each.qno,
+        qno: each.qno,
+        category: each.category,
         question: each.question,
         answer: each.answer,
       }))

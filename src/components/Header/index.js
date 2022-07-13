@@ -6,7 +6,7 @@ import './index.css'
 
 class Header extends Component {
   state = {
-    isToggle: true,
+    isToggle: false,
   }
 
   showActiveMethod = () => {
@@ -72,7 +72,9 @@ class Header extends Component {
             >
               <ImMenu2 className="menuIcon" alt="menu" />
             </button>
-            <div className="menu">{this.showActiveMethod}</div>
+          </div>
+          <div className="menu">
+            {isToggle ? this.ToggleButtonActive() : null}
           </div>
         </div>
       </>

@@ -8,13 +8,13 @@ const TotalStats = props => {
     stateName,
     recovered,
     decreased,
-    conform,
+    confirmed,
     other,
     population,
     stateCode,
   } = data
 
-  const active = recovered - decreased - conform - other
+  const active = confirmed - recovered - decreased - other
 
   return (
     <>
@@ -26,15 +26,19 @@ const TotalStats = props => {
         </div>
 
         <div className="home-container">
+          <p className="conform-state">{confirmed}</p>
+        </div>
+
+        <div className="home-container">
           <p className="active-state">{active}</p>
         </div>
 
         <div className="home-container">
-          <p className="decreased-state">{decreased}</p>
+          <p className="conform-state">{recovered}</p>
         </div>
 
         <div className="home-container">
-          <p className="conform-state">{conform}</p>
+          <p className="decreased-state">{decreased}</p>
         </div>
 
         <div className="home-container">

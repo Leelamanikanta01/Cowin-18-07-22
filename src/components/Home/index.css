@@ -72,7 +72,7 @@
   margin: 0px 10px;
 }
 
-.stats-title {
+.state-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -131,13 +131,15 @@
   align-items: center;
 }
 
-.table-header-title {
+.table-title-header {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   color: #f8fafc;
+  padding-left: 28px;
+  margin-left: 15px;
 }
 .state-wise-data-container {
   display: flex;
@@ -168,6 +170,8 @@
 
 .other-tables-bar {
   width: 15.6%;
+  padding: 25px;
+  margin: 25px;
 }
 
 .other-tables {

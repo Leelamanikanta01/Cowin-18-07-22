@@ -1,5 +1,6 @@
-.vaccine-main-container {
+.vaccination-main-container {
   background-color: #161625;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -8,7 +9,7 @@
   margin-top: 60px;
 }
 @media screen and (max-width: 600px) {
-  .vaccine-main-container {
+  .vaccination-main-container {
     margin-top: 0px;
   }
 }

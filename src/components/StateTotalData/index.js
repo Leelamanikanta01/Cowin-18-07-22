@@ -10,7 +10,11 @@ class StateTotalData extends Component {
     deceasedData: {},
   }
 
-  getEachStateData = () => {
+  componentDidMount() {
+    this.getEachStateData()
+  }
+
+  getEachStateData = async () => {
     const {eachStateTotalData} = this.props
 
     const totalConfirmedCasesData = eachStateTotalData.confirmed

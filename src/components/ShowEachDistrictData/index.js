@@ -5,8 +5,8 @@ const ShowEachDistrictData = props => {
 
   return (
     <li className="district-list">
-      <p className="district-name">{name}</p>
       <p className="district-number">{number}</p>
+      <p className="district-names">{name}</p>
     </li>
   )
 }

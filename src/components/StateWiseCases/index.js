@@ -215,7 +215,7 @@ class StateWiseCases extends Component {
   renderLoader = () => (
     <>
       <div className="loader-container" testid="stateDetailsLoader">
-        <Loader type="ThreeDots" color="blue" height="50" width="50" />
+        <Loader type="Audio" color="blue" height="50" width="50" />
       </div>
     </>
   )

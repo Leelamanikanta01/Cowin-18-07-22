@@ -10,11 +10,11 @@ const SearchResult = props => {
     <li>
       <Link className="search-link" to={`/state/${id}`}>
         <div className="search-main-container">
-          <h1 className="search-heading">{stateName}</h1>
+          <h1 className="search-heading font-face-gm">{stateName}</h1>
           <button className="search-button" type="button">
             {stateCode}
             <BiChevronRightSquare
-              alt="icon search"
+              alt="line icon"
               className="icon"
               testid="searchResultChevronRightIcon"
             />

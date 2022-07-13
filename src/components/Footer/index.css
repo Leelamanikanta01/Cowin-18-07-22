@@ -1,8 +1,9 @@
-footer-container {
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #1e1e30;
+  background-size: cover;
   width: 100%;
   padding: 7px;
   margin-top: auto;
@@ -29,6 +30,12 @@ footer-container {
   line-height: 24px;
   text-align: center;
   color: #94a3b8;
+}
+
+.icons-container {
+  text-align: center;
+  padding: 9px;
+  margin: 12px;
 }
 
 .icon {
