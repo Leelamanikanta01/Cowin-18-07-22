@@ -1,6 +1,6 @@
 import {FiInstagram} from 'react-icons/fi'
 import {VscGithubAlt} from 'react-icons/vsc'
-import {FaTwitter} from 'react-icons/fa'
+import {FaTwitter, FaFacebook} from 'react-icons/fa'
 
 import './index.css'
 
@@ -17,6 +17,7 @@ function Footer() {
         <FiInstagram className="icon" />
         <VscGithubAlt className="icon" />
         <FaTwitter className="icon" />
+        <FaFacebook className="icon" />
       </div>
     </div>
   )
