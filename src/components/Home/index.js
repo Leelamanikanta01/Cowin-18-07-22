@@ -240,7 +240,7 @@ class Home extends Component {
 
     return (
       <>
-        <div className="state-list-column" testid="countryWideConfirmedCases">
+        <div className="state-column" testid="countryWideConfirmedCases">
           <p className="state-title red">Confirmed</p>
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/conf_cof3e9.jpg"
@@ -250,7 +250,7 @@ class Home extends Component {
           <p className="state-heading red">{isConfirmedState}</p>
         </div>
 
-        <div className="state-list-column" testid="countryWideActiveCases">
+        <div className="state-column" testid="countryWideActiveCases">
           <p className="state-title blue">Active</p>
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/act_kq7nfx.jpg"
@@ -260,7 +260,7 @@ class Home extends Component {
           <p className="state-heading blue">{isActiveState}</p>
         </div>
 
-        <div className="state-list-column" testid="countryWideRecoveredCases">
+        <div className="state-column" testid="countryWideRecoveredCases">
           <p className="state-title green">Recovered</p>
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/uyf_ndpqov.jpg"
@@ -270,7 +270,7 @@ class Home extends Component {
           <p className="state-heading green">{isRecoveredState}</p>
         </div>
 
-        <div className="state-list-column" testid="countryWideDeceasedCases">
+        <div className="state-column" testid="countryWideDeceasedCases">
           <p className="state-title grey">Deceased</p>
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/dese_tgak4e.jpg"
