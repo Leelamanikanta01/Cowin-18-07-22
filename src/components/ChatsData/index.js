@@ -14,7 +14,7 @@ import './index.css'
 
 class ChartsData extends Component {
   state = {
-    allData: '',
+    alldata: '',
     forOtherChart: '',
     isLoading: true,
   }
@@ -62,7 +62,7 @@ class ChartsData extends Component {
       }))
 
       this.setState({
-        allData: particularState,
+        alldata: particularState,
         forOtherChart: particularStateForOtherChart,
         isLoading: false,
       })
@@ -79,12 +79,13 @@ class ChartsData extends Component {
   )
 
   barChart = () => {
-    const {allData} = this.state
+    const {alldata} = this.state
     const {category} = this.props
     const barChartType = category.toLowerCase()
 
-    const toptendata = allData.slice(Math.max(allData.length - 10, 0))
-
+    const toptendata = alldata.slice(Math.max(alldata.length - 10, 0))
+    // console.log('all data for bar chart')
+    // console.log(toptendata)
     let colortype = '#9A0E31'
     if (barChartType === 'confirmed') {
       colortype = '#9A0E31'

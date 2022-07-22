@@ -17,7 +17,7 @@ class Header extends Component {
     <>
       <ul className="link-items">
         <Link className="link" to="/">
-          <li className="item">Home</li>
+          <li className="item">HOME</li>
         </Link>
 
         <Link className="link" to="/about">
@@ -45,7 +45,7 @@ class Header extends Component {
           </Link>
           <ul className="link-items">
             <Link className="link" to="/">
-              <li className="item">Home</li>
+              <li className="item">HOME</li>
             </Link>
 
             <Link className="link" to="/about">

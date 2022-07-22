@@ -19,6 +19,52 @@
   align-items: center;
 }
 
+.home-table-state-confirmed {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f8fafc;
+  width: 16%;
+  text-align: end;
+}
+
+.home-table-state-active {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f8fafc;
+  width: 16%;
+  text-align: end;
+}
+
+.home-table-state-recovered {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f8fafc;
+  width: 16%;
+  text-align: end;
+}
+
+.home-table-state-population {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f8fafc;
+  width: 16%;
+  text-align: end;
+  margin-right: 30px;
+}
+
+.home-table-state-deceased {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f8fafc;
+  width: 16%;
+  text-align: end;
+}
+
 .home-content-container {
   background: #2f2f43;
   border-radius: 8px;
@@ -66,7 +112,7 @@
   flex-wrap: wrap;
 }
 
-.state-column {
+.color-container {
   text-align: center;
   min-width: 120px;
   margin: 0px 10px;
@@ -157,7 +203,14 @@
   justify-content: flex-start;
   align-items: center;
 }
-.button {
+.asc-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.des-button {
   background-color: transparent;
   border: none;
   outline: none;
@@ -175,7 +228,8 @@
 }
 
 .other-tables {
-  padding: 0;
+  padding-right: 0;
+  margin: 0;
 }
 
 .loader-container {
@@ -277,7 +331,7 @@
   .state-heading {
     font-size: 16px;
   }
-  .state-column {
+  .color-container {
     margin: 0px 3px;
   }
   .state-wise-column {

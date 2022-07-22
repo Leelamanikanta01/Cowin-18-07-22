@@ -240,7 +240,7 @@ class Home extends Component {
 
     return (
       <>
-        <div className="state-column" testid="countryWideConfirmedCases">
+        <div className="color-container" testid="countryWideConfirmedCases">
           <p className="state-title red">Confirmed</p>
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/conf_cof3e9.jpg"
@@ -250,7 +250,7 @@ class Home extends Component {
           <p className="state-heading red">{isConfirmedState}</p>
         </div>
 
-        <div className="state-column" testid="countryWideActiveCases">
+        <div testid="countryWideActiveCases" className="color-container">
           <p className="state-title blue">Active</p>
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/act_kq7nfx.jpg"
@@ -260,7 +260,7 @@ class Home extends Component {
           <p className="state-heading blue">{isActiveState}</p>
         </div>
 
-        <div className="state-column" testid="countryWideRecoveredCases">
+        <div testid="countryWideRecoveredCases" className="color-container">
           <p className="state-title green">Recovered</p>
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/uyf_ndpqov.jpg"
@@ -270,7 +270,7 @@ class Home extends Component {
           <p className="state-heading green">{isRecoveredState}</p>
         </div>
 
-        <div className="state-column" testid="countryWideDeceasedCases">
+        <div testid="countryWideDeceasedCases" className="color-container">
           <p className="state-title grey">Deceased</p>
           <img
             src="https://res.cloudinary.com/amst/image/upload/v1639929248/dese_tgak4e.jpg"
@@ -316,20 +316,20 @@ class Home extends Component {
     const {statesInfo} = this.state
 
     return (
-      <div className="state-wise-column">
+      <div className="state-wise-column" testid="stateWiseCovidDataTable">
         <div className="state-list">
           <div className="state-list-container">
+            <p className="state-header-title">States/UT</p>
             <button
-              className="button"
+              className="asc-button"
               type="button"
               testid="ascendingSort"
               onClick={this.ascendingSortButtonClick}
             >
               <FcGenericSortingAsc className="order-icon" />
             </button>
-            <p className="state-header-title">states/UT</p>
             <button
-              className="button"
+              className="des-button"
               type="button"
               testid="descendingSort"
               onClick={this.descendingSortButtonClick}
@@ -337,34 +337,20 @@ class Home extends Component {
               <FcGenericSortingDesc className="order-icon" />
             </button>
           </div>
-          <div className="other-table-bar">
-            <p className="table-title-header">Confirmed</p>
-          </div>
-
-          <div className="other-table-bar">
-            <p className="table-title-header">Active</p>
-          </div>
-
-          <div className="other-table-bar">
-            <p className="table-title-header">Recovered</p>
-          </div>
-
-          <div className="other-table-bar">
-            <p className="table-title-header">Deceased</p>
-          </div>
-
-          <div className="other-table-bar">
-            <p className="table-title-header">Population</p>
-          </div>
+          <p className="home-table-state-confirmed">Confirmed</p>
+          <p className="home-table-state-active">Active</p>
+          <p className="home-table-state-recovered">Recovered</p>
+          <p className="home-table-state-deceased">Deceased</p>
+          <p className="home-table-state-population">Population</p>
         </div>
-        <div className="state-wise-data-container">
-          <ul className="other-tables">
-            {statesInfo.map(each => (
-              <TotalStats key={each.stateCode} data={each} />
-            ))}
-          </ul>
-        </div>
+        {/* <div className="state-wise-data-container"> */}
+        <ul className="other-tables">
+          {statesInfo.map(each => (
+            <TotalStats key={each.stateCode} data={each} />
+          ))}
+        </ul>
       </div>
+      //   </div>
     )
   }
 
@@ -425,7 +411,7 @@ class Home extends Component {
             </div>
             {search.length > 0 ? showSearchList : ''}
             {isLoading ? (
-              this.renderLoaderView
+              this.renderLoadingView()
             ) : (
               <div className="card-container">
                 <div className="state-country-container">
